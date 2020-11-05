@@ -17,5 +17,6 @@ Route::get('/', 'App\Http\Controllers\EmployeeController@index');
 Route::post('departments/find', 'App\Http\Controllers\DepartmentController@find')->name('departments.find');
 
 Route::resource('employees', 'App\Http\Controllers\EmployeeController');
+Route::resource('employeesJSON', 'App\Http\Controllers\EmployeeJSONController');
 Route::resource('departments', 'App\Http\Controllers\DepartmentController');
 
