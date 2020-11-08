@@ -120,6 +120,8 @@ class EmployeeJSONController extends Controller
             $employee->commission_pct = $request->get('commission_pct');
             $employee->manager_id = $request->get('manager_id');
             $employee->department_id = $request->get('department_id');
+
+            $employee->save();
             
             return Response('Employee updated');
         }
